@@ -40,4 +40,20 @@
       Der Junge Chor hat die CD "Student sein..." mit Studentenliedern produziert.
     </p>
   </a>
+  <a href="/medien/cd-junge-kuenstler-im-agv/" class="list-group-item">
+    <h2 class="list-group-item-heading">
+      CD "Junge Künstler im AGV"
+    </h2>
+    <p class="list-group-item-text">
+      Eine CD mit musikalischen Beiträgern aktiver AGVer
+    </p>
+  </a>
+  <a href="/medien/agv-in-der-presse/" class="list-group-item">
+    <h2 class="list-group-item-heading">
+      AGV in der Presse
+    </h2>
+    <p class="list-group-item-text">
+      Preissebeiträge über den AGV
+    </p>
+  </a>
 </div>
