@@ -26,6 +26,7 @@ use Rack::Rewrite do
 
   r301 '/favicon.ico', '/images/favicon.ico'
   r301 '/kontakt/impressum/', '/impressum/'
+  r301 '/musik-und-theater/junges-theater/improvisationstheater/', '/musik-und-theater/improvisationstheater/'
 end
 
 # Serve static files under a `build` directory:
