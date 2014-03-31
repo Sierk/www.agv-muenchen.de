@@ -14,7 +14,7 @@ Vereinsziel des AGVs ist es, allen Münchner Studentinnen und Studenten (und auc
 
 <div class="row">
   <div class="list-group col-sm-6">
-    <a href="/ueber-den-agv/die-verbindung/" class="list-group-item">
+    <a href="/ueber-den-agv/die-verbindung/" class="list-group-item list-group-item-info">
       <h2 class="list-group-item-heading">
         Über die Verbindung
       </h2>
@@ -24,7 +24,7 @@ Vereinsziel des AGVs ist es, allen Münchner Studentinnen und Studenten (und auc
     </a>
   </div>
   <div class="list-group col-sm-6">
-    <a href="/musik-und-theater/" class="list-group-item">
+    <a href="/musik-und-theater/" class="list-group-item list-group-item-info">
       <h2 class="list-group-item-heading">
         Über Musik & Theater
       </h2>
