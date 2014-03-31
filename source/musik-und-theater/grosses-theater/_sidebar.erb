@@ -1,0 +1,27 @@
+<% content_for :sidebar do %>
+<%= partial 'shared/sidebar_navigation',
+        locals: {
+          links: {
+            'projekte-termine' => {
+              path: '/musik-und-theater/grosses-theater/projekte-termine/',
+              name: 'Projekte, Termine',
+              title: 'Projekte, Termine'
+            },
+            regisseurin: {
+              path: '/musik-und-theater/grosses-theater/regisseurin/',
+              name: 'Regisseurin',
+              title: 'Regisseurin'
+            },
+            biographie: {
+              path: '/musik-und-theater/grosses-theater/biographie/',
+              name: 'Biographie',
+              title: 'Biographie'
+            },
+            kontakt: {
+              path: '/musik-und-theater/grosses-theater/kontakt/',
+              name: 'Kontakt',
+              title: 'Kontakt'
+            },
+          }
+        } %>
+<% end %>

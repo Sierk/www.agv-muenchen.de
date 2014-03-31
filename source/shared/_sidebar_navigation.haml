@@ -1,0 +1,4 @@
+%ul.nav.nav-pills.nav-stacked
+  - links.each_value do |item|
+    %li{ nav_parent_active?(item[:path]) }
+      = link_to item[:name], item[:path], { title: item[:title] }
