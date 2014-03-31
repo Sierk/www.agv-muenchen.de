@@ -1,0 +1,91 @@
+!!!
+%html{ lang: I18n.locale, prefix: 'og: http://ogp.me/ns# article: http://ogp.me/ns/article#' }
+  %head
+    = meta_tag 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'
+    %link{ rel: 'dns-prefetch', href: '//fonts.googleapis.com' }
+    %link{ rel: 'dns-prefetch', href: '//www.google-analytics.com' }
+    - if ENV['CRAZYEGG_ID'].present?
+      %link{ rel: 'dns-prefetch', href: '//dnn506yrbagrg.cloudfront.net' }
+    - if ENV['ASSET_HOST_URL'].present?
+      %link{ rel: 'dns-prefetch', href: ENV['ASSET_HOST_URL'] }
+    %title= head_title
+    = meta_tag 'width=device-width, initial-scale=1.0', name: 'viewport'
+    = partial 'shared/favicons'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
+    = stylesheet_link_tag 'all'
+    /[if lt IE 9]
+      = javascript_include_tag '//html5shim.googlecode.com/svn/trunk/html5.js'
+      = javascript_include_tag '//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'
+    /[if IE 7]
+      = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css'
+    = meta_tag data.site.twitter_profile, name: 'twitter:site'
+    - if author.twitter.present?
+      = meta_tag author.twitter, name: 'twitter:creator'
+    = meta_tag current_page.data.title, name: 'twitter:title'
+    %link{ rel: 'canonical', href: URI.join(data.site.url, current_page.url) }
+    = meta_tag URI.join(data.site.url, current_page.url), property: 'og:url'
+    %link{ rel: 'publisher', href: data.site.google_profile }
+    - if author.google_profile.present?
+      %link{ rel: 'author', href: author.google_profile }
+    = meta_tag current_page.data.title, property: 'og:title'
+    = meta_tag data.site.facebook_admins, property: 'fb:admins'
+    = meta_tag 'AGV München', itemprop: 'name'
+    = meta_tag 'AGV München', property: 'og:site_name'
+    = meta_tag image_path('logo.svg'), itemprop: 'image'
+    - if current_page.data.description.present?
+      - [{ name: 'description' }, { name: 'twitter:description' }, { property: 'og:description' }].each do |property|
+        = meta_tag current_page.data.description.strip, property
+    - if current_page.data.image.present?
+      - [{ name: 'twitter:image' }, { itemprop: 'image' }, { property: 'og:image' }].each do |property|
+        = meta_tag image_path(current_page.data.image).gsub(/\A\/\//, "#{URI(data.site.url).scheme}://"), property
+    %link{ rel: 'search', href: url_for('opensearch.xml'), type: 'application/opensearchdescription+xml', title: 'Durchsuchen Sie die Homepage des AGV München' }
+    - current_page.data.header && current_page.data.header.metatags.each do |tag|
+      = tag
+    = yield_content :html_header
+  %body{id: body_id, class: body_class}
+
+    = yield
+
+    %footer#footer
+      .container
+        %address.address{ itemscope: true, itemtype: 'http://schema.org/Organization' }
+          .residence
+            %ul.list-inline
+              %li{ itemprop: 'name' }= link_to 'AGV München',  '/', itemprop: 'url'
+              %li{ itemprop: 'address', itemscope: true, itemtype: 'http://schema.org/PostalAddress' }
+                %span{ itemprop: 'streetAddress' } Ledererstraße 5
+                &middot;
+                %span{ itemprop: 'postalCode' } 80331
+                %span{ itemprop: 'addressLocality' } München
+          .contact
+            %ul.list-inline
+              %li
+                %abbr{ title: 'Telefon' }
+                  %i.icon-phone
+                %span{ itemprop: 'telephone' } +49 (0)89 22 37 07
+              %li
+                %abbr{ title: 'E-Mail' }
+                  %i.icon-envelope
+                = mail_to 'geschaeftsstelle@agv-muenchen.de', 'geschaeftsstelle@agv-muenchen.de', itemprop: 'email'
+      - if content_for? :footer
+        .container.widgets
+          .row
+            = yield_content :footer
+      .container.widgets
+        .row
+          .col-md-4.widget.search
+            %h2 Suche
+            %form{ action: url_for('/search/index.html'), method: 'get', role: 'form' }
+              .form-group
+                = label_tag :q, class: 'sr-only' do
+                  Suche
+                = search_field_tag :q, placeholder: 'Diese Website durchsuchen', required: true, autocomplete: false, class: 'form-control input-sm'
+              = submit_tag 'Suchen', class: 'btn btn-default btn-sm'
+      .container
+        .row.copyright
+          .col-md-12
+            &copy; AGV München
+            |
+            = link_to 'Impressum', '/impressum.html'
+
+    = partial 'shared/javascript'

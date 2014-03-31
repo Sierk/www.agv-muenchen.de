@@ -1,0 +1,24 @@
+- urls = []
+- urls << asset_path(:js, :all)
+- urls << %Q['//dnn506yrbagrg.cloudfront.net/pages/scripts/#{ENV['CRAZYEGG_ID']}.js?'+Math.floor(new Date().getTime()/3600000)] if ENV['CRAZYEGG_ID'].present?
+- urls = urls.map { |url| %w(" ').include?(url[0]) ? url : %Q["#{url}"] }.join(', ')
+
+:coffeescript
+  downloadJSAtOnload = ->
+    appendScript = (url) ->
+      element = document.createElement("script")
+      element.src = url
+      document.body.appendChild element
+
+    urls = [#{urls}]
+
+    appendScript url for url in urls
+
+  if window.addEventListener
+    window.addEventListener "load", downloadJSAtOnload, false
+  else if window.attachEvent
+    window.attachEvent "onload", downloadJSAtOnload
+  else
+    window.onload = downloadJSAtOnload
+
+= google_analytics_tag

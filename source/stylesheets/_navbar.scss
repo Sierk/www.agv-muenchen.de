@@ -1,0 +1,26 @@
+/* Navbar
+-------------------------------------------------- */
+
+.navbar {
+  a.navbar-brand {
+    line-height: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Allow to click on the SVG object element
+   * http://stackoverflow.com/questions/2088485/how-to-insert-a-svg-object-into-html-with-links
+   */
+  a.navbar-brand {
+    position:relative;
+    display:inline-block;
+  }
+  a.navbar-brand:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+  }
+}

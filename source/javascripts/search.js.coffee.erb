@@ -1,0 +1,4 @@
+jQuery ->
+  if $('body#search').length
+    $('#search-query').lunrSearch
+      indexUrl: '/search/entries.json?<%= DateTime.now.strftime('%s') %>'

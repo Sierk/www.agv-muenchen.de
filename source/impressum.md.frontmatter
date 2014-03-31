@@ -1,0 +1,8 @@
+---
+title: Impressum
+header:
+  metatags:
+    - <meta name="robots" content="noindex,follow" />
+body:
+  id: impressum
+---

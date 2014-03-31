@@ -1,0 +1,20 @@
+body#ueber-uns {
+  #team {
+    .employee {
+      .details {
+        float: left;
+        padding-right: $padding-large-vertical;
+      }
+      
+      .social {
+        margin-bottom: $line-height-computed;
+      }
+      
+      .social {
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

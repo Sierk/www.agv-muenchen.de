@@ -1,0 +1,28 @@
+index:
+  path: /
+  name: Startseite
+  title: Startseite
+ueber-den-agv:
+  path: /ueber-den-agv/
+  name: AGV
+  title: "Über den AGV München"
+musik-und-theater:
+  path: /musik-und-theater/
+  name: "Musik & Theater"
+  title: "Musische Aktivitäten im AGV, Chor, Orchester, Jazz etc."
+veranstaltungen:
+  path: /veranstaltungen/
+  name: Veranstaltungen
+  title: Events im AGV
+medien:
+  path: /medien/
+  name: Medien
+  title: "Fotos & Videos vom AGV"
+vermietung:
+  path: /vermietung/
+  name: Vermietung
+  title: Räume im AGV mieten
+kontakt:
+  path: /kontakt/
+  name: Kontakt
+  title: "Wie können Sie mit dem AGV München in Kontakt treten?"

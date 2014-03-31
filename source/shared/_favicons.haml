@@ -1,0 +1,9 @@
+- %w(32 57 72 96 128 144 195).each do |size|
+  = favicon_tag "favicons/#{size}.png", sizes: "#{size}x#{size}"
+- %w(72 120 144 152).each do |size|
+  = favicon_tag "favicons/#{size}.png", sizes: "#{size}x#{size}", rel: 'apple-touch-icon'
+/[if IE]
+  = favicon_tag 'favicon.ico', rel: 'shortcut icon'
+= favicon_tag 'logo.svg', rel: 'logo'
+= meta_tag '#075b91', name: 'msapplication-TileColor'
+= meta_tag image_path('favicons/144.png'), name: 'msapplication-TileImage'

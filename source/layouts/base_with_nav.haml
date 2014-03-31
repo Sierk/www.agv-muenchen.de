@@ -1,0 +1,28 @@
+- wrap_layout :base do
+  %header.navbar.navbar-default{ role: 'banner' }
+    .container
+      .navbar-header
+        %button.navbar-toggle{'data-target' => '.navbar-collapse', 'data-toggle' => 'collapse', type: 'button'}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to '/index.html', class: 'navbar-brand' do
+          = content_tag(:object, 'AGV München', type: 'image/svg+xml', data: image_path('logo.svg'), width: 30, height: 30)
+      %nav.collapse.navbar-collapse{ role: 'navigation' }
+        %ul.nav.navbar-nav
+          = partial 'shared/top_navigation'
+
+  .top-messages.container
+    %nav{ itemprop: 'breadcrumb' }
+      = breadcrumbs
+
+    - if content_for? :alert_success
+      %aside.alert.alert-success
+        %button.close{'aria-hidden' => true, 'data-dismiss' => 'alert', type: 'button'} &times;
+        = yield_content :alert_success
+    - if content_for? :alert_error
+      %aside.alert.alert-danger
+        %button.close{'aria-hidden' => true, 'data-dismiss' => 'alert', type: 'button'} &times;
+        = yield_content :alert_error
+
+  = yield

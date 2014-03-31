@@ -1,0 +1,18 @@
+%main{ role: 'main' }
+  %h1 404
+  %h2 Seite nicht gefunden
+
+  %p Leider konnten wir die gewünschte Seite nicht finden.
+
+  #search
+    %p
+      Aber womöglich kann Ihnen
+      = link_to 'unsere Suche', '/search/index.html', title: 'Homepage durchsuchen'
+      weiter helfen...
+
+    %form{ action: url_for('/search/index.html'), method: 'get', role: 'form', class: 'form-inline' }
+      .form-group
+        = label_tag :q, class: 'sr-only' do
+          Suche
+        = search_field_tag :q, placeholder: 'Diese Website durchsuchen', required: true, autocomplete: false, class: 'form-control input-lg'
+      = submit_tag 'Suchen', class: 'btn btn-default'

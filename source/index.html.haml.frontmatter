@@ -1,0 +1,12 @@
+---
+title: Willkommen
+description: >
+  Der AGV München ist eine musische Studentenverbindung im Herzen Münchens.
+body:
+  id: index
+breadcrumb:
+  title: Startseite
+seo:
+  priority: 1.0
+  changefreq: daily
+---

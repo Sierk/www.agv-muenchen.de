@@ -1,0 +1,10 @@
+- if build?
+  :javascript
+    if (!window.mstag) mstag = {loadTag : function(){},time : (new Date()).getTime()};
+  %script#mstag_tops{ src: '//flex.msn.com/mstag/site/c485f361-5649-46b9-9324-f81bd545ac5b/mstag.js', type: 'text/javascript' }
+  :javascript
+    mstag.loadTag('analytics', {dedup:'1',domainId:'#{domain_id}',type:'1',actionid:'#{action_id}'})
+  %noscript
+    %iframe{ frameborder: '0', height: '1', scrolling: 'no', src: "//flex.msn.com/mstag/tag/c485f361-5649-46b9-9324-f81bd545ac5b/analytics.html?dedup=1&domainId=#{domain_id}&type=1&actionid=#{action_id}", style: 'visibility:hidden;display:none', width: '1' }
+- else
+  / This page will be tracked as Bing Conversion.

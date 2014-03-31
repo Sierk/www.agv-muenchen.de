@@ -1,0 +1,11 @@
+---
+title: Seite nicht gefunden
+description: Leider konnten wir die gewünschte Seite nicht finden.
+header:
+  metatags:
+    - <meta name="robots" content="noindex,nofollow" />
+body:
+  id: file_not_found
+seo:
+  priority: 0
+---

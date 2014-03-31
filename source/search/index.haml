@@ -1,0 +1,18 @@
+%form{ action: url_for('/search/index.html'), method: 'get', role: 'form', class: 'form-horizontal' }
+  .form-group
+    = label_tag :q, class: 'sr-only' do
+      Suche
+    = search_field_tag :q, placeholder: 'Diese Website durchsuchen', required: true, autocomplete: false, class: 'form-control input-lg col-sm-12', id: 'search-query'
+
+.row
+  .col-md-12
+    %section#search-results
+      .entries
+
+%script#search-results-template{ type: 'text/mustache' }
+  {{#entries}}
+  %article
+    %h3
+      = link_to '{{title}}', '{{url}}'
+    %p {{{summary}}}
+  {{/entries}}

@@ -1,0 +1,57 @@
+footer#footer {
+  background-color: $navbar-default-bg;
+  border: 1px solid $navbar-default-border;
+  margin-top: $navbar-margin-bottom;
+  padding: $navbar-padding-horizontal 0;
+
+  color: $navbar-default-color;
+
+  a {
+    color: $navbar-default-link-color;
+
+    &:hover {
+      color: $navbar-default-link-hover-color;
+    }
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: $navbar-border-radius;
+  }
+
+  .address {
+    a:hover {
+      text-decoration: none;
+    }
+
+    .residence {
+      float: left;
+
+      li[itemprop=name] {
+        font-weight: bold;
+      }
+    }
+
+    .contact {
+      float: right;
+
+      abbr {
+        border: 0;
+      }
+    }
+  }
+
+  .widgets {
+    margin-bottom: $navbar-margin-bottom;
+  }
+
+  .social,
+  .copyright {
+    text-align: center;
+  }
+
+  .social {
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
