@@ -7,17 +7,14 @@ Ledererstraße 5
 
 ## Vertreten durch
 
-Dr. Peter Ruile
-
-Philipp Capeller, Dipl.-Ing. Architekt
+* Dr. Peter Ruile
+* Philipp Capeller, Dipl.-Ing. Architekt
 
 ## Kontakt
 
-Telefon: (089) 22 37 07
-
-Telefax: (089) 29 16 14 41
-
-E-Mail: geschaeftsstelle@agv-muenchen.de
+* Telefon: (089) 22 37 07
+* Telefax: (089) 29 16 14 41
+* E-Mail: <geschaeftsstelle@agv-muenchen.de>
 
 ## Registereintrag
 
@@ -91,7 +88,7 @@ Facebook erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse unsere S
 Wenn Sie den Facebook “Like-Button” anklicken während Sie in Ihrem Facebook-Account eingeloggt sind, können Sie die Inhalte unserer Seiten auf Ihrem Facebook-Profil verlinken.
 Dadurch kann Facebook den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen.
 Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook erhalten.
-Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von facebook unter [http://de-de.facebook.com/policy.php](http://de-de.facebook.com/policy.php)
+Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von facebook unter [http://de-de.facebook.com/policy.php](http://de-de.facebook.com/policy.php).
 
 Wenn Sie nicht wünschen, dass Facebook den Besuch unserer Seiten Ihrem Facebook-Nutzerkonto zuordnen kann, loggen Sie sich bitte aus Ihrem Facebook-Benutzerkonto aus.
 
@@ -104,7 +101,8 @@ Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website
 Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen.
 
 Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.
-Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren:[http://tools.google.com/dlpage/gaoptout?hl=de](http://tools.google.com/dlpage/gaoptout?hl=de).
+Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren:
+[http://tools.google.com/dlpage/gaoptout?hl=de](http://tools.google.com/dlpage/gaoptout?hl=de).
 
 ### Datenschutzerklärung für die Nutzung von Google +1
 
@@ -134,7 +132,7 @@ Dabei werden auch Daten an Twitter übertragen.
 Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Twitter erhalten.
 Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Twitter unter [http://twitter.com/privacy](http://twitter.com/privacy).
 
-Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter[http://twitter.com/account/settings](http://twitter.com/account/settings) ändern.
+Ihre Datenschutzeinstellungen bei Twitter können Sie in den Konto-Einstellungen unter [http://twitter.com/account/settings](http://twitter.com/account/settings) ändern.
 
 ### Quellverweis
 * [eRecht24 Disclaimer](http://www.e-recht24.de/muster-disclaimer.htm)
