@@ -1,7 +1,19 @@
 - wrap_layout :base_with_nav do
-  %main.container{ role: 'main' }
-    - if body_title?
-      .page-header
-        %h1= body_title
+  .container
+    - if content_for? :sidebar
+      .row
+        %main.col-md-9{ role: 'main' }
+          - if body_title?
+            .page-header
+              %h1= body_title
 
-    = yield
+          = yield
+        .sidebar.col-md-3
+          = yield_content :sidebar
+    - else
+      %main{ role: 'main' }
+        - if body_title?
+          .page-header
+            %h1= body_title
+
+        = yield
