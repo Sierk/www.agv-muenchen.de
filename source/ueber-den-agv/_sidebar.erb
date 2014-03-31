@@ -1,0 +1,47 @@
+<% content_for :sidebar do %>
+<%= partial 'shared/sidebar_navigation',
+        locals: {
+          links: {
+            'die-verbindung' => {
+              path: '/ueber-den-agv/die-verbindung/',
+              name: 'Die Verbindung',
+              title: 'Die Verbindung'
+            },
+            'unser-verbindungshaus' => {
+              path: '/ueber-den-agv/unser-verbindungshaus/',
+              name: 'Unser Verbindungshaus',
+              title: 'Unser Verbindungshaus'
+            },
+            'vorstaende' => {
+              path: '/ueber-den-agv/vorstaende/',
+              name: 'Vorstände',
+              title: 'Vorstände'
+            },
+            'drehmoeser-huette' => {
+              path: '/ueber-den-agv/drehmoeser-huette/',
+              name: 'Drehmöser Hütte',
+              title: 'Drehmöser Hütte'
+            },
+            'segelgruppe' => {
+              path: '/ueber-den-agv/segelgruppe/',
+              name: 'Segelgruppe',
+              title: 'Segelgruppe'
+            },
+            'mittagstisch' => {
+              path: '/ueber-den-agv/mittagstisch/',
+              name: 'Mittagstisch',
+              title: 'Mittagstisch'
+            },
+            'tanzkurs' => {
+              path: '/ueber-den-agv/tanzkurs/',
+              name: 'Aktiven Tanzkurs',
+              title: 'Aktiven Tanzkurs'
+            },
+            'interna' => {
+              path: '/ueber-den-agv/interna/',
+              name: 'Interna',
+              title: 'Interna'
+            },
+          }
+        } %>
+<% end %>
