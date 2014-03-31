@@ -19,8 +19,8 @@ gem 'unicorn'
 gem 'newrelic_rpm'
 gem 'airbrake'
 
-gem 'bootstrap-sass', '~> 3.0.0.0', require: false
-gem 'font-awesome-middleman', github: 'tmaier/font-awesome-middleman'
+gem 'bootstrap-sass', '~> 3.1.1.0', require: false
+gem 'font-awesome-middleman'
 
 group :development do
   gem 'pry'

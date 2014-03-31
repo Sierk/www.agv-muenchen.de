@@ -16,8 +16,6 @@
     /[if lt IE 9]
       = javascript_include_tag '//html5shim.googlecode.com/svn/trunk/html5.js'
       = javascript_include_tag '//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'
-    /[if IE 7]
-      = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css'
     = meta_tag data.site.twitter_profile, name: 'twitter:site'
     - if author.twitter.present?
       = meta_tag author.twitter, name: 'twitter:creator'
