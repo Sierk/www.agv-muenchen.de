@@ -1,0 +1,52 @@
+<% content_for :sidebar do %>
+<%= partial 'shared/sidebar_navigation',
+        locals: {
+          links: {
+            'grosser-chor' => {
+              path: '/musik-und-theater/grosser-chor/',
+              name: 'Großer Chor',
+              title: 'Großer Chor'
+            },
+            'junger-chor' => {
+              path: '/musik-und-theater/junger-chor/',
+              name: 'Junger Chor',
+              title: 'Junger Chor'
+            },
+            'chor-der-verdammten' => {
+              path: '/musik-und-theater/chor-der-verdammten/',
+              name: 'Chor der Verdammten',
+              title: 'Chor der Verdammten'
+            },
+            'grosses-orchester' => {
+              path: '/musik-und-theater/grosses-orchester/',
+              name: 'Großes Orchester',
+              title: 'Großes Orchester'
+            },
+            'junges-orchester' => {
+              path: '/musik-und-theater/junges-orchester/',
+              name: 'Junges Orchester',
+              title: 'Junges Orchester'
+            },
+            'big-band' => {
+              path: '/musik-und-theater/big-band/',
+              name: 'Big Band',
+              title: 'Big Band'
+            },
+            'grosses-theater' => {
+              path: '/musik-und-theater/grosses-theater/',
+              name: 'Großes Theater',
+              title: 'Großes Theater'
+            },
+            'junges-theater' => {
+              path: '/musik-und-theater/junges-theater/',
+              name: 'Junges Theater',
+              title: 'Junges Theater'
+            },
+            'improvisationstheater' => {
+              path: '/musik-und-theater/improvisationstheater/',
+              name: 'Improvisationstheater',
+              title: 'Improvisationstheater'
+            },
+          }
+        } %>
+<% end %>
