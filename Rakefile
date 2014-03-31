@@ -15,10 +15,10 @@ if defined? Paratrooper
 
   desc 'Deploy site'
   task :deploy do
-    deployment = Paratrooper::Deploy.new('k-hoch-3-site',
+    deployment = Paratrooper::Deploy.new('agv',
                                          notifiers: [
                                              Paratrooper::Notifiers::ScreenNotifier.new,
-                                             SearchEngineNotifier.new('http://www.k-hoch-3.net'),
+                                             SearchEngineNotifier.new('https://www.agv-muenchen.de'),
                                          ]
     )
 
