@@ -1,0 +1,6 @@
+Dieses Semester spielen wir Hans Falladas “Kleiner Mann, was nun?”.
+
+Aufführungen sind
+14./15./16. März 2013 & 21./22./23. März 2013
+jeweils um 19:30 im Großen Saal des Akademischen Gesangvereins.
+Der Eintritt ist wie immer frei.
