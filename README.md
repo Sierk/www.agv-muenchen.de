@@ -6,6 +6,9 @@ Sie basiert auf [Middleman][] und kommt gänzlich ohne dynamischen Code aus.
 
 [Middleman]: http://middlemanapp.com/
 
+**Neue Seite in Entwicklung**.
+Der aktuelle Stand kann unter <https://agv.herokuapp.com/> angesehen werden.
+
 ## Deployment
 
 ```bash
