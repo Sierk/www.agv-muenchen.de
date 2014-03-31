@@ -59,11 +59,11 @@
             %ul.list-inline
               %li
                 %abbr{ title: 'Telefon' }
-                  %i.icon-phone
+                  %i.fa.fa-phone
                 %span{ itemprop: 'telephone' } +49 (0)89 22 37 07
               %li
                 %abbr{ title: 'E-Mail' }
-                  %i.icon-envelope
+                  %i.fa.fa-envelope
                 = mail_to 'geschaeftsstelle@agv-muenchen.de', 'geschaeftsstelle@agv-muenchen.de', itemprop: 'email'
       - if content_for? :footer
         .container.widgets
